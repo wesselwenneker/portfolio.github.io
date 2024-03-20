@@ -1,25 +1,109 @@
 body{
     background-color: black;
     color: white;
+    font-family: sans-serif;
 }
+h2{
+    font-size: 1000%;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
 .main-page{
     margin: auto;
-    background-image: url(images/IMG_1910.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .navbar{
     overflow: hidden;
-    display: block;
-    background-color: rgba(0, 0, 0, 0,2) !important;
-    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#project{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(33, 33, 33);
+    border-radius: 8px;
+    height: 500px;
+    width: 20%;
+    min-width: 250px;
+    margin: auto;
+    margin-left: 30px;
+    text-align: center;
+    transition: all, 0.4s;
+    margin-top: 50px;
+}
+
+.slimmekas{
+    background-image: url(images/Black_colour.jpg);
+    background-size: contain;
+    background-position: center;
+
+}
+
+.slimmekas:hover{
+    background-image: url(images/IMG_2848_3.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    transition: all, 0.4s;
+}
+
+.voetbalrobot{
+    background-image: url(images/Black_colour.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.voetbalrobot:hover{
+    background-image: url(images/IMG_1623.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    transition: all, 0.4s;
+}
+
+.solenoid{
+    background-image: url(images/Black_colour.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.solenoid:hover{
+    background-image: url(images/IMG_0888.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+    transition: all, 0.4s;
+}
+
+.cpp{
+    background-image: url(images/Black_colour.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cpp:hover{
+    background-image: url(images/ISO_C++_Logo.svg.png);
+    background-attachment: fixed;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+    transition: all, 0.4s;
 }
 
 .navbar a{
     float: left;
     display: block;
-    margin: auto;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -31,51 +115,14 @@ body{
     color: #ddd;
 }
 
-.navbar .icon {
-    float: right;
-    display: none;
-}
-
-@media screen and (max-width: 800px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      right: 0;
-      display: block;
-    }
-  }
-  
-@media screen and (max-width: 800px) {
-    .navbarresponsive {
-        position: relative;
-        background-color: grey;
-        border: grey;
-        border-radius: 5px;
-    }
-    .navbarresponsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: block;
-        color: white;
-    }
-    .navbarresponsive a {
-        float: none;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: clamp(20px, 1vw, 2vw);
-
-    }
-}
-
 .entry-content{
-    height: 800px;
+    height: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: clamp(30px, 4vw, 50px);
+    background-image: url(images/IMG_1910.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
