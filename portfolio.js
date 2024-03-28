@@ -32,3 +32,10 @@ function openCpp() {
 function closeCpp() {
     document.getElementById("cpp_overlay").style.height = "0%";
 }
+
+function openConnectAi(){
+    document.getElementById("connectAi_overlay").style.height = "100%";
+}
+function closeConnectAi() {
+    document.getElementById("connectAi_overlay").style.height = "0%";
+}
