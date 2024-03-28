@@ -1,6 +1,6 @@
 body{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: sans-serif;
 }
 h2{
@@ -17,11 +17,102 @@ h2{
     overflow: hidden;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.entry-content{
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry-content h1{
+    font-size: clamp(50px, 8vw, 80px);
+    transition: 0.3s;
+    color: black;
+}
+
+a{
+    color: black;
+    text-decoration-line: none;
+}
+
+.entry-content h1:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.entry-content h4{
+    font-size: clamp(20px, 3vw, 40px);
+}
+
+.about-content{
+    height: clamp(250px, 40vw, 600px);
+    border-radius: 60px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    background-image: url(images/IMG_1910.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.about-text{
+    width: 30%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.about-text p{
+    font-size: clamp(15px, 2vw, 30px);
+}
+
+.about-text h4{
+    font-size: clamp(20px, 3vw, 45px);
+}
+
+.image{
+    width: 50%;
+    height: auto;
+    justify-content: flex-end;
+}
+
+.morebutton{
+    transition: 0.2s;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.morebutton:hover{
+    transform: scale(1.05);
 }
 
 .projects{
     display: flex;
     flex-wrap: wrap;
+}
+
+.projects h3{
+    font-size: 200%;
+}
+
+.projects p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    flex-grow: 1;
 }
 
 #project{
@@ -31,80 +122,78 @@ h2{
     border-radius: 8px;
     height: 500px;
     width: 20%;
-    min-width: 250px;
+    min-width: 300px;
     margin: auto;
-    margin-left: 30px;
     text-align: center;
     transition: all, 0.4s;
     margin-top: 50px;
+    padding: 20px;
 }
 
 .slimmekas{
-    background-image: url(images/Black_colour.jpg);
+    background-color: white;
     background-size: contain;
     background-position: center;
 
 }
 
 .slimmekas:hover{
-    background-image: url(images/IMG_2848_3.jpg);
+    background-image: url(images/slimmekas.png);
     background-size: cover;
     background-position: center;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all, 0.4s;
 }
 
 .voetbalrobot{
-    background-image: url(images/Black_colour.jpg);
+    background-color: white;
     background-size: contain;
     background-position: center;
 }
 
 .voetbalrobot:hover{
-    background-image: url(images/IMG_1623.jpg);
+    background-image: url(images/voetbalbot.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all, 0.4s;
 }
 
 .solenoid{
-    background-image: url(images/Black_colour.jpg);
-    background-size: contain;
-    background-position: center;
+    background-color: white;
 }
 
 .solenoid:hover{
-    background-image: url(images/IMG_0888.jpg);
+    background-image: url(images/solenoid.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all, 0.4s;
 }
 
 .cpp{
-    background-image: url(images/Black_colour.jpg);
+    background-color: white;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .cpp:hover{
-    background-image: url(images/ISO_C++_Logo.svg.png);
+    background-image: url(images/cpp.png);
     background-attachment: fixed;
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all, 0.4s;
 }
 
 .navbar a{
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -112,17 +201,61 @@ h2{
 }
 
 .navbar a:hover{
-    color: #ddd;
+    color: rgb(80, 80, 80);
 }
 
-.entry-content{
-    height: 60rem;
+footer{
+    height: 80px;
+    margin-top: 100px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.4s;
+}
+  
+.overlay-content {
+    background-color: white;
+    position: relative;
+    border-color: rgb(200,200,200);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 40px;
+    top: 25%;
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: clamp(30px, 4vw, 50px);
-    background-image: url(images/IMG_1910.jpg);
-    background-size: cover;
-    background-position: center;
+    flex-wrap: wrap;
 }
 
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay-text{
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

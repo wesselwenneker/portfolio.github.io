@@ -12,42 +12,96 @@
         <header class="header">
           <div class="navbar" id="myNavbar">
             <a href="#entry-content">Home</a>
+            <a href="#about">About me</a>
             <a href="#projects">Projects</a>
             <a href="#footer">Contact</a>
           </div>
         </header>
         <div class="main-content">
-          <div class="entry-content">
-            <h1>I am Wessel Wenneker</h1>
+          <div class="entry-content" id="entry-content">
+            <h1><a href="#about">I am Wessel Wenneker</a></h1>
+            <h4>Programmer and Robotics Enthousiast</h2>
           </div>
-          <div class="about">
-            <div class="content">
-              <h2>About me</h2>
-            </div>
-            <div class="image">
-
+          <div class="about" id="about">
+            <h2>About me</h2>
+            <div class="about-content">
+              <div class="about-text">
+                <h4>hoi hoi</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat vitae 
+                  ante vel pharetra. Sed mattis felis elit, a aliquam tellus lobortis in. Vivamus porta 
+                  convallis neque a efficitur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat vitae 
+                  ante vel pharetra.</p>
+              </div>
             </div>
           </div>
-          <div class="projects">
+          <div class="projects" id="projects">
             <h2 style="width: 100%;">Projects</h2>
             <div class="slimmekas" id="project">
-              <h3>SLIMME KAS</h3>
+              <h3>SMART GREENHOUSE</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat vitae 
+                ante vel pharetra. Sed mattis felis elit, a aliquam tellus lobortis in. Vivamus porta 
+                convallis neque a efficitur.
+              </p>
+              <button class="morebutton" onclick="openKas()">Read more</button>
             </div>
             <div class="voetbalrobot" id="project">
               <h3>VOETBAL ROBOT</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat vitae 
+                ante vel pharetra. Sed mattis felis elit, a aliquam tellus lobortis in. Vivamus porta 
+                convallis neque a efficitur.
+              </p>
+              <button class="morebutton" onclick="openVoetbalBot()">Read more</button>
             </div>
             <div class="solenoid" id="project">
-              <h3>SOLENOID MOTOR</h3>
+              <h3>SOLENOID ENGINE</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat vitae 
+                ante vel pharetra. Sed mattis felis elit, a aliquam tellus lobortis in. Vivamus porta 
+                convallis neque a efficitur.
+              </p>
+              <button class="morebutton" onclick="openSolenoid()">Read more</button>
             </div>
             <div class="cpp" id="project">
               <h3>C++</h3>
-            </div>
-            <div class="">
-              
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat vitae 
+                ante vel pharetra. Sed mattis felis elit, a aliquam tellus lobortis in. Vivamus porta 
+                convallis neque a efficitur.
+              </p>
+              <button class="morebutton" onclick="openCpp()">Read more</button>
             </div>
           </div>
         </div>
-        <footer class="footer">
+        <div id="slimmekas_overlay" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeKas()" style="color: white;">&times;</a>
+          <div class="overlay-content">
+            <div class="overlay-text"></div>
+            <div class="overlay-image-kas"></div>
+          </div>
+        </div>
+
+        <div id="voetbalBot_overlay" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeVoetbalBot()" style="color: white;">&times;</a>
+          <div class="overlay-content">
+            <div class="overlay-text"></div>
+            <div class="overlay-image-voetbalbot"></div>
+          </div>
+        </div>
+
+        <div id="solenoid_overlay" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeSolenoid()" style="color: white;">&times;</a>
+          <div class="overlay-content">
+            <div class="overlay-text"></div>
+            <div class="overlay-image-solenoid"></div>
+          </div>
+        </div>
+
+        <div id="cpp_overlay" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeCpp()" style="color: white;">&times;</a>
+          <div class="overlay-content">
+            <div class="overlay-text"></div>
+            <div class="overlay-image-cpp"></div>
+          </div>
+        </div>
+        <footer id="footer">
 
         </footer>
       </div>
